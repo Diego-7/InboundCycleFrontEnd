@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  
   <!-- Header -->
   <header>
     <div id="orange-line"></div>
@@ -40,7 +41,7 @@
       <!-- Ebook -->
       <img src="img/ebook.png" class="ebook" alt="E-book genérico de InboundCycle">
       <!-- Titles -->
-      <h1>Lorem ipsum dolor sit amet elit consectetur adipiscing eu ipsum  porttitor ligula donec</h1>
+      <h1><strong>Lorem ipsum dolor sit amet elit consectetur adipiscing eu ipsum  porttitor ligula donec</strong></h1>
       <hr>
       <h2>Lorem ipsum dolor sit amet consectetur adipiscing elit eu porttitor ligula donec</h2>
       <!-- Body text -->
@@ -56,15 +57,15 @@
       <form action="post">
         <h3>DESCARGAR E-BOOK GRATIS</h3>
         <fieldset>
-          <input type="text" name="name" placeholder="Nombre"><br>
-          <input type="text" name="surname" placeholder="Apellidos"><br>
-          <input type="email" name="email"  placeholder="Email"><br>
+          <input type="text" name="name" placeholder="Nombre" class="formCamp"><br>
+          <input type="text" name="surname" placeholder="Apellidos" class="formCamp"><br>
+          <input type="email" name="email"  placeholder="Email" class="formCamp"><br>
         </fieldset>
         <fieldset>
           <label><input type="checkbox" name="legal" class="check-box"> Acepto la <a href="#" title="Lea nuestra política de privacidad">política de privacidad</a>*</label><br>
           <label><input type="checkbox" name="subscription" class="check-box"> Suscríbeme al blog</label>
         </fieldset>
-        <button type="submit">DESCARGAR</button>
+        <button type="submit" class="formButton">DESCARGAR</button>
       </form>
     </aside>
   </div>
@@ -79,7 +80,7 @@
           <!-- Copyright -->
           <small>InboundCycle © 2015</small><hr>
           <li><a href="#" title="Lea nuestra política de privacidad">Política de Privacidad</a></li><hr>
-          <li><a href="#" title="Lea el aviso legal">Aviso Legal</a></li><hr>
+          <li><a href="#" title="Lea el aviso legal">Aviso Legal</a></li>
         </ul>
       </nav>
     </div>
@@ -87,8 +88,10 @@
   <!-- Pop-up -->
   <div class="popup">
     <div class="caption">
-      <i class="fa fa-times"></i>
+      
       <p>¡Muchas gracias!</p>
+      <button class="exit">CERRAR</button>
     </div>
   </div>
+  <script src="js/script.js"></script>
 </body>

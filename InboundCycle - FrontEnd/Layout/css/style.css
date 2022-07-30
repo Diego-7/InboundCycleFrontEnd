@@ -1,7 +1,24 @@
 *{
     margin: 0px;
     padding: 0;
+    box-sizing: border-box;
+    
 }
+
+/*FONTS*/
+@font-face {
+    font-family: "awesome";
+    src: url("./../fonts/fontawesome-webfont.ttf") format("truetype"),
+    url("./../fonts/FontAwesome.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, body{
+    min-height: 100%
+}
+
+/*HEADER*/
 #orange-line{
     background-color: #D1511F;
     height: 5px;
@@ -30,84 +47,109 @@
 .separator-image{
     background-image: url("./../img/separator-image.jpg");
     width: 100%;
-    height: 169px;   
+    height: 135px; 
+   
 }
 
-section{
+/*BOX*/
+.wrapper{
     display: inline-block;
-    margin: 0px 200px 0px 200px;  
+    margin: 0% 12% 0% 12%; 
+    max-width: 100%; 
+    display: inline-block;
+    align-items: center;
+   
 }
 
 .wrapper h1{
+    font-family: "awesome", 'verdana';
     color: #E65A22;
-    font-size: 42px;
-    margin-bottom: 48px; 
+    font-size: 35px;
+    margin-top: 4%;
+    width: 41%;
 }
 
 .wrapper hr{
+    font-family: "awesome", 'verdana';
     border-color: #c5c4c4;
-    margin-top: 88px;
+    margin-top: 80px;
+    opacity: 0.3;
+    
 }
 
 .wrapper h2{
+    font-family: "awesome", 'verdana';
     color: #B0ADA7;
-    font-size:30px;
-    margin-top: 70px;
+    font-size:22px;
+    margin-top: 49px;
+    width: 39%;
 }
 
 .wrapper p{ 
+    font-family: "awesome", 'verdana';
     margin-bottom: 48px;
-    margin-top: 30px;
-    width: 850px;  
-    font-size: 14px;
+    margin-top: 69px;
+    width: 55%;  
+    font-size: 13px;
 }
 
 .wrapper a{
     color: #E36120;
+    font-family: "awesome", 'verdana';
 }
 
 .ebook{ 
     float: right;
     position: relative;
-    margin-right: 695px;
-    bottom: 40px; 
+    margin-right: 37%;
+    bottom: 71px;  
 }
 
+
 form{ 
-    float:right;
+    font-family: "awesome", 'verdana';
     background-color: #D6D6D4;
-    position:absolute;
-    bottom: 239px;
-    margin: 0px 200px 0px 60%;
-    height: 40%;     
+    position:relative;
+    bottom: 557px;
+    margin-left: 76%;
+    width: 355px;
+    padding: 1%;
+   
+        
 }
 
 form h3{
+    font-family: "awesome", 'verdana';
     color: #E36120;
     text-align: center;
-    padding: 20px;  
+    padding: 5%; 
+    font-size: 16px; 
+    
 }
 
-form input{ 
+.formCamp{ 
+    font-family: "awesome", 'verdana';
     display: flex;
     margin: 0 auto;
-    height: 35px;
-    width: 250px;
+   font-size: 18px;
+   padding:10px;
+   width: 80%;
     text-align: left;  
 }
 
-label input{
-    align-items:left !important;
-    width: 5%;
-    display: inline-block;
+.check-box{
+    margin-left: 36px;
+   margin-bottom: 10px;
 }
 
 label a{
     text-decoration: none;
+    font-family: "awesome", 'verdana';
 }
 
 fieldset{
     border: none;
+    
 }
 
 button{
@@ -122,33 +164,56 @@ button{
     padding-right: 25%;
     height: 35px;
    align-items:center;
-   margin-top: 25px;
+   margin-bottom: 10px;
+   margin-top: 15px;
+   font-family: "awesome", 'verdana';
+}
+
+button:hover{
+    background-color: #9C3C00
 }
 
 .emphasizes{
     color: #E36120;
     font-size: 22px; 
-    margin-left: 200px;
+    margin-left: 11%;
+    margin-bottom: 15px;
+    font-family: "awesome", 'verdana';
+    
 }
 
-.footer-frame{
+aside{
+    
+}
+
+footer{
     background-color: #424242;
-    position: fixed;
-    bottom: 0;
+    font-family: "awesome", 'verdana';
     width: 100%;
-    display:flex;
-    height: 125px;
+    height: 120px;
     align-items: center;
-    padding-left: 200px;
-    padding-right: 200px;
+    padding-left: 10%;
+    padding-right: 10%;
+    justify-content: space-between;
+
+    
 }  
 
 .footer-frame ul, small{
   display:flex;
+  float: right; 
+}
+
+.footer-frame img{
+    position: relative;
+    top: 40px;
 }
 
 .footer-frame li, small{
+    align-items: center;
     list-style: none; 
+    padding: 20px;  
+    font-size: 12px;
 }
 
 .footer-frame a, small{
@@ -156,61 +221,148 @@ button{
     color: #fff;
 }
 
-.footer-frame hr{
-   
+footer hr{
+    height: 12px;
+    margin-top: 22px;
 }
+
+
 
 .popup{
-    display: none; 
+    position: fixed;
+    top: 0;
+    bottom: 80%;
+    right: 0;
+    left: 0;
+    margin: auto;
+    width: auto;
+    height: 150px;
+    padding: 20px;
+    background: #f7f7f4;
+    display: none;
 }
 
-@media only screen and (max-device-width: 900px){
+.popup p{
+    text-align: center;
+    font-size: 38px;
+    color: orange;
+    
+}
 
-    *{
-        width:100%;
-        float:left;
-    }
-    #orange-line{
-        min-width: 100%;
-    }
+.popup button{
+    width: auto;
+    margin-top: 10px;
+    
 
+}
+
+@media  (max-device-width: 1200px){
+
+    
+*{
+    box-sizing: unset;
+}
+
+#orange-line{
+    width: 100%;
+    
+}
+   
     .logotype{
-        text-align: center;
+        height: auto;
+        width: 55%;
+        padding: 0;
+        display: flex;
+        margin: 0 auto;
     }
 
     .social-icons{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
+        font-size: 35px;
+        text-align: center;
     }
-
     .separator-image{
         display: none;
     }
 
     .wrapper{
-        font-size: 11px;
+        display:inline;
+        font-size: 15px;
+        text-align: center;
+        width: 100%;
+        padding: 12px;
+        margin: 0px 5px 0px 5px;
+    }
+
+    .wrapper h1{
+        font-size: 20px;
+        width: 100%;
+        padding: 0;
+        display: block;
+        
+    }
+
+    .wrapper h2, .wrapper p {
+        width: 100%;
+    }
+
+    .wrapper hr{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        display: none;
+        
+        
+    }
+
+    .emphasizes{
         margin: 0;
         padding: 0;
         text-align: center;
+        margin-bottom: 15px;
+        
     }
 
-    form{
-        
-        height: auto;
-        align-items: center;
-        font-size: 11px;
-        display:block;
-        position: fixed;
+    .ebook{
+        float: none;
+        padding-top: 22%;
     }
+    form{
+        font-size: 15px;
+        margin-left: 0%;
+        margin-top: 15px;
+        position:unset;
+        margin: 0 auto;
+      
+    }
+
+
+    button{
+        width: auto;
+        font-size: 11px;
+    } 
 
     footer{
-        max-width: 100%;
         display: flex;
-        justify-content: column;
+        flex-direction:column;
+        padding-right: 0%;
+        width: 100%;
+        margin: 0 !important;
+        padding: 0;
     }
 
+    footer img{
+        display:flex;
+        margin: 0 auto;
+        margin-bottom: 5%;
+        margin-top: 2%;
+    }
 
+    footer li{
 
+    }
+
+    footer hr{
+        display:none;
+    }
 }
 

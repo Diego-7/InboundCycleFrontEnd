@@ -1,7 +1,7 @@
 const sendButton = document.querySelector(".formButton");
 const popUp = document.querySelector(".popup");
 const contend = document.querySelector(".wrap");
-const closeDiv = document.querySelector(".exit");
+const closeDiv = document.querySelector(".close-button");
 
 sendButton.onclick = function clicked(event) {
 

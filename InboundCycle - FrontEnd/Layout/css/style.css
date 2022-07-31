@@ -47,7 +47,7 @@ html, body{
 .separator-image{
     background-image: url("./../img/separator-image.jpg");
     width: 100%;
-    height: 135px; 
+    height: 118px; 
    
 }
 
@@ -66,7 +66,7 @@ html, body{
     color: #E65A22;
     font-size: 35px;
     margin-top: 4%;
-    width: 41%;
+    width: 80%;
 }
 
 .wrapper hr{
@@ -82,15 +82,16 @@ html, body{
     color: #B0ADA7;
     font-size:22px;
     margin-top: 49px;
-    width: 39%;
+    width: 68%;
 }
 
 .wrapper p{ 
     font-family: "awesome", 'verdana';
+    color: #000;
     margin-bottom: 48px;
-    margin-top: 69px;
-    width: 55%;  
-    font-size: 13px;
+    margin-top: 42px;
+    width: 130%;  
+    font-size: 14px;
 }
 
 .wrapper a{
@@ -101,21 +102,23 @@ html, body{
 .ebook{ 
     float: right;
     position: relative;
-    margin-right: 37%;
-    bottom: 71px;  
+    margin-right: -22%;
+    bottom: 33px;  
 }
 
+aside{
+    display: inline-block !important;
+    position: absolute;
+}
 
 form{ 
     font-family: "awesome", 'verdana';
     background-color: #D6D6D4;
-    position:relative;
-    bottom: 557px;
-    margin-left: 76%;
-    width: 355px;
-    padding: 1%;
-   
-        
+    margin-left: 66%;
+    margin-top: 15%;
+    width: 355px; 
+    padding: 9% 6% 9% 6%;
+
 }
 
 form h3{
@@ -123,7 +126,7 @@ form h3{
     color: #E36120;
     text-align: center;
     padding: 5%; 
-    font-size: 16px; 
+    font-size: 17px; 
     
 }
 
@@ -152,7 +155,7 @@ fieldset{
     
 }
 
-button{
+.formButton{
     background-color: #E36120;
     color: #fff;
     font-size: 15px;
@@ -170,33 +173,32 @@ button{
 }
 
 button:hover{
-    background-color: #9C3C00
+    background-color: #9C3C00;
 }
 
 .emphasizes{
     color: #E36120;
     font-size: 22px; 
-    margin-left: 11%;
-    margin-bottom: 15px;
+    margin-left: 14%;
+    margin-bottom: 80px;
     font-family: "awesome", 'verdana';
     
 }
 
-aside{
-    
+section{
+display: inline-block !important;
+width: 50%;
 }
 
 footer{
     background-color: #424242;
     font-family: "awesome", 'verdana';
     width: 100%;
-    height: 120px;
+    height: 110px;
     align-items: center;
     padding-left: 10%;
     padding-right: 10%;
     justify-content: space-between;
-
-    
 }  
 
 .footer-frame ul, small{
@@ -224,14 +226,13 @@ footer{
 footer hr{
     height: 12px;
     margin-top: 22px;
+    opacity: 0.3;
+    
 }
-
-
 
 .popup{
     position: fixed;
     top: 0;
-    bottom: 80%;
     right: 0;
     left: 0;
     margin: auto;
@@ -244,23 +245,28 @@ footer hr{
 
 .popup p{
     text-align: center;
-    font-size: 38px;
-    color: orange;
-    
+    font-size: 28px;
+    color: #E36120; 
 }
 
-.popup button{
-    width: auto;
-    margin-top: 10px;
-    
-
+.close-button{
+    background: #E36120;
+    color: #fff;
+    border-style: none; 
+    padding: 3px;
 }
 
-@media  (max-device-width: 1200px){
+.close-button:hover{ 
+    cursor: pointer;
+    background: #9C3C00;
+}
+
+@media  (max-width: 1200px){
 
     
 *{
     box-sizing: unset;
+    overflow-x: hidden !important;
 }
 
 #orange-line{
@@ -284,10 +290,14 @@ footer hr{
         display: none;
     }
 
+    section{
+        display: block !important; 
+        width: 100%;
+        
+    }
     .wrapper{
-        display:inline;
+        display:block !important;
         font-size: 15px;
-        text-align: center;
         width: 100%;
         padding: 12px;
         margin: 0px 5px 0px 5px;
@@ -310,8 +320,6 @@ footer hr{
         margin: 0;
         padding: 0;
         display: none;
-        
-        
     }
 
     .emphasizes{
@@ -319,6 +327,7 @@ footer hr{
         padding: 0;
         text-align: center;
         margin-bottom: 15px;
+        font-size: 20px;
         
     }
 
@@ -328,13 +337,12 @@ footer hr{
     }
     form{
         font-size: 15px;
-        margin-left: 0%;
-        margin-top: 15px;
-        position:unset;
         margin: 0 auto;
+        margin-bottom: 200px;
+        padding: 5px !important;
+        
       
     }
-
 
     button{
         width: auto;
@@ -342,12 +350,12 @@ footer hr{
     } 
 
     footer{
-        display: flex;
         flex-direction:column;
-        padding-right: 0%;
         width: 100%;
-        margin: 0 !important;
-        padding: 0;
+        height: auto;
+        position: fixed;
+        bottom: 0;
+        box-sizing: border-box; 
     }
 
     footer img{
@@ -355,14 +363,14 @@ footer hr{
         margin: 0 auto;
         margin-bottom: 5%;
         margin-top: 2%;
-    }
-
-    footer li{
-
+        padding-bottom: 15px;
     }
 
     footer hr{
         display:none;
     }
+
+    
+
 }
 
